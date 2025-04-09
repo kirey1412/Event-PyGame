@@ -1,0 +1,46 @@
+import pygame, time
+pygame.init()
+screen=pygame.display.set_mode((470,470))
+pygame.display.set_caption("Happy Birthday")
+screen.fill("white")
+
+red=pygame.image.load("red.png")
+redd=pygame.transform.scale(red, (70,70))
+
+holo=pygame.image.load("hologramballoon.png")
+holo=pygame.transform.scale(holo, (70,70))
+
+guppi=pygame.image.load("guppi.png")
+guppii=pygame.transform.scale(guppi, (70,70))
+
+crown=pygame.image.load("crown.png")
+crownn=pygame.transform.scale(crown, (70,70))
+
+cake=pygame.image.load("cakey.png")
+cakee=pygame.transform.scale(cake, (100,100))
+
+while True:
+    font=pygame.font.SysFont("Monaco", 45)
+    text=font.render("HAPPY BIRTHDAY", True, "black")
+    screen.blit(text, (125, 150))
+    screen.blit(redd, (70,200))
+    screen.blit(holo, (400, 185))
+    screen.blit(guppii, (345, 210))
+    screen.blit(cakee, (168, 235))
+    screen.blit(crownn, (180, 175))
+    pygame.display.update()
+    time.sleep(0.4)
+    screen.fill("white")
+    pygame.display.update()
+    font=pygame.font.SysFont("Monaco", 45)
+    text=font.render("HAPPY BIRTHDAY", True, "#FF007F")
+    screen.blit(text, (125, 157))
+    screen.blit(redd, (70,190))
+    screen.blit(holo, (400, 180))
+    screen.blit(guppii, (340, 210))
+    screen.blit(cakee, (168, 235))
+    screen.blit(crownn, (180, 180))
+    pygame.display.update()
+    time.sleep(0.4)
+    screen.fill("white")
+    pygame.display.update()
